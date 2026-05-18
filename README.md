@@ -1,189 +1,132 @@
-## NEOXR-BOT 5.0 (BASE) 
+PRIMA V1
 
-> A simple and lightweight WhatsApp bot script built for fast implementation. Its primary functions include downloading content from social media, basic group management features, and other essential utility operations directly through WhatsApp.
+Bot WhatsApp modern berbasis Node.js dengan sistem modular dan performa yang ringan.
 
-[![Forks](https://img.shields.io/github/forks/neoxr/neoxr-bot?style=flat-square)](https://github.com/neoxr/neoxr-bot/network/members)
-[![Stars](https://img.shields.io/github/stars/neoxr/neoxr-bot?style=flat-square)](https://github.com/neoxr/neoxr-bot/stargazers)
-[![License](https://img.shields.io/github/license/neoxr/neoxr-bot?style=flat-square)](./LICENSE) ![NPM Downloads](https://img.shields.io/npm/dw/%40neoxr%2Fwb) [![Issues](https://img.shields.io/github/issues/neoxr/neoxr-bot?style=flat-square)](https://github.com/neoxr/neoxr-bot/issues)
+«Dibangun untuk kebutuhan multi-fitur, mudah dikembangkan, dan lebih rapi untuk maintenance jangka panjang.»
 
-### ⌗ PREMIUM SCRIPT V5.1-OPTIMA
+---
 
-🏷️ Price : **Rp. 150.000 / $20.80**
+Tentang Project
 
-**Special Features & Benefit :**
-- Auto Download
-- Chatbot + Logic (Supp. Audio, Image, Video, etc)
-- 30+ Mini Games
-- RPG (Tournament, Battle Pet, Clan, etc)
-- Leveling & Roles
-- Captcha Verification
-- Email Verification
-- Send Email
-- Cloud Storage
-- Menfess w/ Session
-- Store Plugin (Product)
-- Bot Hosting (Jadibot Auto Reconnect)
-- WhatsApp Gateway "[Wapify](https://wapify.neoxr.eu)"
-- Mistery Box
-- Scheduler Message (Reminder)
-- Scheduler Ad Message
-- Plugin Model (ESM)
-- 700+ Commands Available
-- Clean Code
-- High Optimation
-- Free Updates
-- Bonus ApiKey 100K Request (for 1 year)
+PRIMA V1 adalah bot WhatsApp berbasis Baileys dengan arsitektur plugin modular menggunakan ESM.
+Project ini dirancang agar struktur script lebih bersih, mudah dipahami, dan fleksibel untuk pengembangan fitur baru.
 
-> [!NOTE]
-> Product link for more information and if you want to buy [https://shop.neoxr.eu/product/TCnb](https://shop.neoxr.eu/product/TCnb) / [Wildan Izzuin](https://wa.me/6285887776722) / [Channel](https://whatsapp.com/channel/0029Vb5ekjf4dTnMuADBHX1j)
+Cocok digunakan untuk:
 
-### ⌗ REQUIREMENTS
+- Bot pribadi
+- Bot grup
+- Media tools
+- Downloader
+- Utility
+- AI features
+- Automation
 
-- [x] NodeJS >= 20 (Recommended v20.18.1)
-- [x] FFMPEG
-- [x] Server vCPU/RAM 1/1GB (Min)
+---
 
-### ⌗ SERVER
+Fitur Utama
 
-- [x] NAT VPS [Hostdata](https://hostdata.id/nat-vps-usa/) (Recommended)
-- [x] Hosting Panel [The Hoster](https://thehoster.net/bot-hosting/)
-- [x] VPS [OVH Hosting](https://www.ovhcloud.com/asia/vps/)
+- Sistem Plugin Modular
+- Downloader Multi Platform
+- AI & Utility Command
+- Group Management
+- Sticker & Converter
+- Owner Features
+- Multi Database Support
+- Anti Spam & Cooldown
+- Handler Cepat & Stabil
+- Struktur ESM Modern
 
-### ⌗ CLOUD DATABASE
+---
 
-- [x] PostgreSQL : [Neon](https://neon.com/), [Cockroach](https://cockroachlabs.cloud/), [Filess](https://filess.io/), [Aiven](https://aiven.io), [Supabase](https://supabase.com/pricing) ([Setup Tutorial](https://youtu.be/kdyF7cP9E7k?si=YjlxI5OMHBdkSxkw))
-- [x] MySQL : [Aiven](https://aiven.io), [Filess](https://filess.io/)
-- [x] Redis : [Upstash](https://upstash.com/)
-- [x] Mongo : [MongoDB](https://www.mongodb.com) ([Setup Tutorial](https://youtu.be/-9lfyWz0SdE?si=nmyA6qeBYKbO4R45))
+Teknologi Yang Digunakan
 
-> [!IMPORTANT]
-> Database setup tutorial, choose based on language : [ID](https://github.com/neoxr/neoxr-bot/blob/5.0-ESM/documentation/DATABASE-ID.md) | [EN](https://github.com/neoxr/neoxr-bot/blob/5.0-ESM/documentation/DATABASE-EN.md)
+- Node.js
+- Baileys
+- JavaScript (ESM)
+- FFmpeg
+- Sharp
+- MongoDB / PostgreSQL / MySQL / Redis
 
-### ⌗ CONFIGURATION
+---
 
-Configuration of this script consists of two files: [config.json](https://github.com/neoxr/neoxr-bot/blob/5.0-ESM/config.json) and [.env](https://github.com/neoxr/neoxr-bot/blob/5.0-ESM/.env).
+Requirements
 
-```Javascript
-{
-   "owner": "6285xxxxxxxx",
-   "owner_name": "Wildan Izzudin",
-   "database": "data",
-   "limit": 15, // Usage limit (default: 15)
-   "ram_limit": "900mb",
-   "max_upload": 50, // File size limit for premium users (default: 50mb)
-   "max_upload_free": 25, // File size limit for free users (default: 25mb)
-   "cooldown": 3, // Anti-spam hold (default: 3s)
-   "timer": 180000,
-   "timeout": 1800000,
-   "permanent_threshold": 3,
-   "notify_threshold": 4,
-   "banned_threshold": 5,
-   "blocks": ["994", "91", "92"],
-   "evaluate_chars":  ["=>", "~>", "<", ">", "$"],
-   "pairing": {
-      "state": true,  // Set to "true" if you want to use the pairing code dan "false" to use scan qr
-      "number": 6285xxxxxxxx, // Your bot number
-      "code": "NEOXRBOT" // Custom pairing code
-   }
-}
-```
+Sebelum menjalankan bot, pastikan sudah tersedia:
 
-```.env
-### Neoxr API : https://api.neoxr.my.id
-API_KEY = ''
+- Node.js versi 20+
+- FFmpeg
+- Koneksi internet stabil
+- Akun WhatsApp untuk pairing
 
-### Database (Mongo, PostgreSQL, MySQL, Redis) — leave empty for local (JSON)
-DATABASE_URL = ''
+---
 
-### Timezone (Important)
-TZ = 'Asia/Jakarta'
-```
+Instalasi
 
-### ⌗ INSTALATION & RUN
+git clone https://github.com/username/prima-v1
+cd prima-v1
+npm install
 
-Make sure the configuration and server meet the requirements so that there are no problems during installation or when this bot is running, type this on your console (linux) :
+---
 
-```
-$ bash install.sh
-```
+Konfigurasi
 
-to run in it, type this :
+Edit file berikut sesuai kebutuhan:
 
-```
-$ pm2 start pm2.config.cjs && pm2 logs neoxr
-```
+config.json
+.env
 
-> [!NOTE]
-> I don't know how to use Windows bacause I'm Linux user, so I didn't create files for installation on Windows :v
+Atur:
 
-### ⌗ INSTALATION & RUN (DOCKER)
+- Nomor owner
+- Pairing code
+- API key
+- Database
+- Identitas bot
 
-```bash
-$ sudo apt update -y && sudo apt install curl -y
-$ curl -fsSL https://get.docker.com | bash
-$ git clone https://github.com/neoxr/neoxr-bot
-$ cd neoxr-bot
-$ docker build -t bot .
-$ docker run -d --name neoxr bot && docker logs -f neoxr
-```
+---
 
-How to stop ?
+Menjalankan Bot
 
-```bash
-$ docker stop neoxr
-```
+Start Normal
 
-### ⌗ DATABASE ADVANCE METHOD
+npm start
 
-```Javascript
-// .all() --- Get all data entry from the array
-=> global.db.users.all()
+Menggunakan PM2
 
-// .get() --- Find a single data entry from the array by jid, lid, id, or _id
-=> global.db.users.get(jid)
+pm2 start pm2.config.cjs
+pm2 logs
 
-// .delete() --- Delete a single data entry from the array by jid, lid, id, or _id
-=> global.db.users.delete(jid)
+---
 
-// .drop() --- Drops a collection of object or array data
-=> global.db.users.drop() // --- Array
-=> global.db.statstic.drop() // --- Object
+Struktur Project
 
-// Chainable Method
-=> global.db.bots(jid)?.data?.users.get(jid)
+plugins/    → Semua fitur bot
+lib/        → Core system & engine
+media/      → Asset bot
+storage/    → Database storage
+tmp/        → File sementara
 
-```
+---
 
-> [!IMPORTANT]
-> To add new data to global.db (e.g., global.db.reports), add data structure in the structure() block method in [models.js.](https://github.com/neoxrjs/v5.1-optima/blob/a5b88906d1ffffa8610fbbcd84fb957e1bf649b9/lib/system/models.js#L216)
+Contributors
 
-### ⌗ TROUBLESHOOTING (BAILEYS)
+Nama| Role
+Thandz| Main Developer
+Vinzz| Maintainer
 
-If you encounter issues or get stuck using ```npm:neoxr/baileys```, consider using one of the alternative Baileys packages listed below.
+---
 
-─ All fixed and more advance features modified by [@itsliaaa](https://github.com/itsliaaa) **(Stable)** ~ [Documentation](https://www.npmjs.com/package/@itsliaaa/baileys)
+Catatan
 
-```JSON
-"baileys": "npm:@itsliaaa/baileys"
-```
+Project ini menggunakan sistem modular agar:
 
-─ Fix connection modified by [@MichelleBot](https://github.com/MichelleBot) **(Stable)** ~ [Documentation](https://github.com/MichelleBot/baileys/blob/master/README.md)
+- lebih mudah maintenance
+- lebih mudah menambah fitur
+- struktur lebih rapi
+- development lebih nyaman
 
-```JSON
-"baileys": "git+https://github.com/MichelleBot/baileys.git"
-```
+---
 
-─ Only add StickerPack function and overhaul resource usage on connection. **(Experiment Only :v)**
+License
 
-```JSON
-"baileys": "git+https://github.com/neoxr/baileys.git"
-```
-
-─ Original Baileys by [@WhiskeySockets](https://github.com/whiskeySockets/Baileys.git)
-
-```JSON
-"baileys": "git+https://github.com/whiskeySockets/Baileys.git"
-```
-
-> [!IMPORTANT]
-> Check this repository regularly to get updates because the progress base is not 100% yet (this is just a base or beta test), if you find an error please make an issue. Thanks.
+Private Project — PRIMA V1
