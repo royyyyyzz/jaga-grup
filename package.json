@@ -1,7 +1,7 @@
 {
-   "name": "neoxr-bot",
-   "version": "5.0",
-   "description": "WhatsApp Bot (Base)",
+   "name": "prima-v1",
+   "version": "1.0.0",
+   "description": "PRIMA V1 - Bot WhatsApp modular berbasis Node.js dan Baileys.",
    "main": "index.js",
    "type": "module",
    "engines": {
@@ -12,18 +12,21 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/neoxr/neoxr-bot.git"
+      "url": "git+https://github.com/royyyyyzz/jaga-grup.git"
    },
    "keywords": [
-      "wb",
-      "bot"
+      "prima-v1",
+      "whatsapp-bot",
+      "baileys",
+      "nodejs",
+      "esm"
    ],
-   "author": "Wildan Izzudin",
+   "author": "Thandz",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/neoxr/neoxr-bot/issues"
+      "url": "https://github.com/royyyyyzz/jaga-grup/issues"
    },
-   "homepage": "https://github.com/neoxr/neoxr-bot#readme",
+   "homepage": "https://github.com/royyyyyzz/jaga-grup#readme",
    "dependencies": {
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neoxr/wb": "^6.0.0-rc.46",
