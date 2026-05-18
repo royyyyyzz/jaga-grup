@@ -98,23 +98,6 @@ pm2 logs
 
 ---
 
-Struktur Project
-
-plugins/    → Semua fitur bot
-lib/        → Core system & engine
-media/      → Asset bot
-storage/    → Database storage
-tmp/        → File sementara
-
----
-
-Contributors
-
-Nama| Role
-Thandz| Main Developer
-Vinzz| Maintainer
-
----
 
 Catatan
 
