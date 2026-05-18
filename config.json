@@ -1,6 +1,6 @@
 {
-   "owner": "6285xxxxxxxx",
-   "owner_name": "Wildan Izzudin",
+   "owner": "6287892083741",
+   "owner_name": "Thandz",
    "database": "data",
    "limit": 15,
    "ram_limit": "900mb",
@@ -16,12 +16,12 @@
    "notify_threshold": 4,
    "banned_threshold": 5,
    "blocks": ["994", "91", "92"],
-   "evaluate_chars":  ["=>", "~>", "<", ">", "$"],
+   "evaluate_chars": ["=>", "~>", "<", ">", "$"],
    "pairing": {
       "state": true,
-      "number": 6282258694977,
-      "browser": ["Mac OS", "Chrome", "139.0.7258.164"],
+      "number": 6281914658862,
+      "browser": ["PRIMA V1", "Chrome", "120.0.0.0"],
       "version": [2, 3000, 1038740778],
-      "code": "NEOXRBOT"
+      "code": "PRIMAV1"
    }
 }
