@@ -60,14 +60,6 @@ Sebelum menjalankan bot, pastikan sudah tersedia:
 
 ---
 
-Instalasi
-
-git clone https://github.com/username/prima-v1
-cd prima-v1
-npm install
-
----
-
 Konfigurasi
 
 Edit file berikut sesuai kebutuhan:
